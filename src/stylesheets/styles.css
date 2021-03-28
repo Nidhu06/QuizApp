@@ -1,0 +1,121 @@
+
+body {
+    background-image: linear-gradient(to right, #642b73, #7f2e75, #993275, #b13872, #c6426e);
+    font-family: "Lobster", cursive;
+    color:white;
+  } 
+  
+  /* category screen */
+  
+  .container-fluid
+  {
+      padding: 3rem;
+  }
+  
+  h4{
+    text-align:center;
+    color:grey;
+  }
+  
+  .form-group
+  {
+    padding-bottom: 1.5rem;
+  }
+  
+  .form-select
+  {
+    padding:10px;
+    width:100%;
+    border-radius: 5px;
+    color:#495057;
+  }
+  
+  #header
+  {
+    color:white;
+    font-size: 100px;
+    text-align: center;
+    margin-bottom : 20px;
+  }
+  
+  .card{
+    background-color: #F3CDFD;
+     border-radius: 30px;
+     margin:auto;
+  }
+  
+  .btn
+  {
+    background-color: #2D0936;
+    color:white;
+  
+  } 
+  .btn:hover
+  {
+    background-color: #7ac3cc;
+  }
+  
+  /* quiz screen */
+  
+  .flex-container
+  {
+  display:flex;
+  flex-direction: column;
+  margin:30px;
+  } 
+  
+  .choices{
+    width:100%;
+    padding:10px;
+    margin-bottom: 5px;
+  } 
+  
+  .button-style {
+     width:100%;
+     padding:20px;
+     font-size:20px;
+     text-align:center;
+     padding-top:5px;
+     color:white;
+     background-image: linear-gradient(to right, #642b73, #7f2e75, #993275, #b13872, #c6426e);
+     justify-content: center;
+  } 
+  
+  .scorebox{
+    width:100%;
+    padding:30px;
+    margin-top:80px;
+    margin-bottom:50px;
+    display:flex;
+    justify-content:center;
+  }
+  
+  .box
+  {
+    font-size : 50px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 45px;
+    margin-bottom: 4rem;
+    font-weight: 500;
+    text-align:center;
+  }
+  
+  /* end screen */
+  
+  .endpage{
+    margin:200px;
+    text-align:center;
+  }
+  
+  h1
+  {
+    margin-bottom: 30px;
+  }
+  
+  .endpage button{
+    width:30%;
+    margin-bottom: 30px;
+  }
