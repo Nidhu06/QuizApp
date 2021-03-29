@@ -71,4 +71,4 @@ const getScore = () => { setScore( score + 10) }
 }
 
 export default QuizScreen;
-export {username} ;
+
