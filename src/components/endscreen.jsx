@@ -1,17 +1,20 @@
 import { useHistory } from "react-router-dom";
+import username from "./loginscreen"
+
 
 function EndScreen(props){
 
-  console.log(props.history.location.state.data);
-
+ 
   let history = useHistory();
 
-   function handlePlayAgain(){
+   function handlePlayAgain(props){
      history.push("/");
    }
   return(
     <div className="endpage">
-      <h1>Name your score is this</h1>
+      <h1> {username} your score is 
+
+       </h1>
       <button onClick={handlePlayAgain}>Play Again</button>
       <br/>
       <button onClick={handlePlayAgain}>Exit</button>

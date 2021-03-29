@@ -12,11 +12,12 @@ function Category() {
     history.push({
       pathname: "/quizscreen",
       state: {
-        data: category
+        data: category,
+        names: name
       }
     });
   }
-
+  
   const useStyles = makeStyles((theme) => ({
 
     media: {
@@ -33,6 +34,7 @@ const classes = useStyles();
 
   const handleName = (event) => {
     setName(event.target.value);
+
   };
 
   const handleCategory = (event) => {
