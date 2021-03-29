@@ -29,18 +29,17 @@ function QuizScreen(props) {
 
   const nextQuestion = () =>
     {
-      setIndex(index + 1);
-      setScore( score + 10)
+      setIndex(index + 1)
     }
     
 
-// const getScore = () => { setScore( score + 10) }
+const getScore = () => { setScore( score + 10) }
 
 
   function onAnswer(e){
     const selected = e.target.innerHTML;
     // console.log(questions[index].correct_answer)
-    const val = selected.trim() === questions[index].correct_answer  ?  nextQuestion() : {score}  ;
+    const val = selected.trim() === questions[index].correct_answer  ?   getScore() : {score}  ;
   }
 
   return questions.length > 0 ? (
