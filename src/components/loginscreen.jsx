@@ -2,6 +2,8 @@ import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import Select from "@material-ui/core/Select";
 import MenuItem from "@material-ui/core/MenuItem";
+import { makeStyles } from '@material-ui/core/styles';
+
 
 function Category() {
   let history = useHistory();
@@ -14,7 +16,18 @@ function Category() {
       }
     });
   }
-  
+
+  const useStyles = makeStyles((theme) => ({
+
+    media: {
+            marginLeft:"45%",
+      },
+    
+}))
+
+const classes = useStyles();
+
+
   const [name, setName] = useState("");
   const [category, setCategory] = useState("");
 
@@ -57,7 +70,9 @@ function Category() {
                   <div className="col">
                     <div className="form-group">
                       <div className="input-group">
-                        <Select value={category} onChange={handleCategory}>
+                        <Select value={category} onChange={handleCategory} className={classes.media}
+                        >
+                               Choose Category
                           <MenuItem value={"General Knowledge"}>
                             General Knowledge
                           </MenuItem>
@@ -98,3 +113,4 @@ function Category() {
 }
 
 export default Category;
+

@@ -61,16 +61,16 @@ body {
   {
   display:flex;
   flex-direction: column;
-  margin:30px;
+  margin:20px;
   } 
   
-  .choices{
-    width:100%;
+  /* .choices{
     padding:10px;
     margin-bottom: 5px;
-  } 
+  }  */
   
   .button-style {
+     margin-bottom: 5px; 
      width:100%;
      padding:20px;
      font-size:20px;
@@ -81,11 +81,25 @@ body {
      justify-content: center;
   } 
   
+  .next-button
+  {
+    
+    width: 30%;   
+    padding:20px;
+    font-size:20px;
+    margin-left:35%;
+    border-radius: 15px;
+    text-align:center;
+    padding-top:5px;
+    color:white;
+    background-color: #902f70;
+    justify-content: center;
+  }
   .scorebox{
     width:100%;
     padding:30px;
-    margin-top:80px;
-    margin-bottom:50px;
+    margin-top:30px;
+    margin-bottom:40px;
     display:flex;
     justify-content:center;
   }
